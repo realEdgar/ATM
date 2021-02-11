@@ -7,17 +7,17 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 62.5%;
   }
-  body {
-    background: linear-gradient(100deg, #005280, #000);
-  }
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 320px;
     height: auto;
+    margin: 0 auto;
+    border: 1px solid black;
     padding: 20px;
+    background-color: #134532;
   }
   header {
     display: flex;
@@ -39,8 +39,7 @@
   }
   .header-total span {
     background-color: white;    
-    padding: 5px;
-    border: 2px solid blue;    
+    padding: 5px;  
     border-radius: 5px;
     color: black;
   }
@@ -72,6 +71,10 @@
     text-align: center;
     margin-bottom: 20px;
   }
+
+  .little-container span {
+    margin-bottom: 10px;
+  }
   .botones {
     width: 70px;
     height: 40px;
@@ -82,7 +85,7 @@
     color: white;
     margin: 0 5px;
     background-color: transparent;
-    box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 3px  rgba(0, 0, 0, 0.5);
   }
   .key-buttons {
     width: 180px;
@@ -102,7 +105,7 @@
     font-size: 1.6rem;
     border-radius: 10px;
     background-color: transparent;
-    box-shadow: 0 4px 4px 4px rgba(0,0,0,0.5);
+    box-shadow: 0 3px 3px  rgba(0,0,0,0.5);
   }
   .key:active {
     transform: scale(0.95);

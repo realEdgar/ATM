@@ -8,6 +8,13 @@ class Billete
     this.imagen.src = imagenes[this.valor];
   }
 }
+function contar() {
+  total = 0;
+  for(let tot of caja) {
+    total += tot.valor * tot.cantidad;
+    cuenta.innerHTML = total;
+  }  
+}
 
 const imagenes = [];
 imagenes["50"] = "./images/dolar50.jpg";
@@ -27,8 +34,8 @@ reset.addEventListener('click', () => {
 
 let caja = [];
 caja.push(new Billete(50,10));
-caja.push(new Billete(20,5));
-caja.push(new Billete(10,5));
+caja.push(new Billete(20,10));
+caja.push(new Billete(10,10));
 let entregado = [];
 let div = 0;
 let papeles = 0;
@@ -83,13 +90,6 @@ function addValor() {
   console.log(entregado);
 }
 
-function contar() {
-  total = 0;
-  for(let tot of caja) {
-    total = total + (tot.valor * tot.cantidad);
-    cuenta.innerHTML = total;
-  }
-}
 
 
 const buttonOne = document.getElementById('one');
