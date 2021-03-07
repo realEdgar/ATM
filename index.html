@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATM</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>National Bank</h1>
-            <p class="header-total">Account: <span>User</span></p>
-            <p class="header-total">Balance: <span id="cuenta"></span></p>       
-        </header>
-        <main>
-            <div class="little-container">
-                <span>How much do you want to draw?</span>
-                <label for="valor">
-                    <input type="text" id="valor" placeholder="How Much" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ATM</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>National Bank</h1>
+                <div class="user-info">
+                    <p class="header-total">Account: <span>User</span></p>
+                    <p class="header-total">Balance: <span id="cuenta"></span></p> 
+                </div>                      
+            </header>
+            <main>
+                <div class="little-container">
+                    <span>How much do you want to draw?</span>
+                    <label for="valor">
+                        <input type="text" id="valor" placeholder="How Much" />
+                    </label>
+                    <label for="boton">
+                        <button class="botones" id="boton">Withdraw</button>
+                        <button class="botones" id="reset">Cancel</button>
+                    </label>
+                </div>            
+                <label class="key-buttons">
+                    <button class="key" id="one">1</button>
+                    <button class="key" id="two">2</button>
+                    <button class="key" id="three">3</button>
+                    <button class="key" id="four">4</button>
+                    <button class="key" id="five">5</button>
+                    <button class="key" id="six">6</button>
+                    <button class="key" id="seven">7</button>
+                    <button class="key" id="eight">8</button>
+                    <button class="key" id="nine">9</button>
+                    <button class="key" id="zero">0</button>
                 </label>
-                <label for="boton">
-                    <button class="botones" id="boton">WITHDRAW</button>
-                    <button class="botones" id="reset">CANCEL</button>
-                </label>
-            </div>            
-            <label class="key-buttons">
-                <button class="key" id="one">1</button>
-                <button class="key" id="two">2</button>
-                <button class="key" id="three">3</button>
-                <button class="key" id="four">4</button>
-                <button class="key" id="five">5</button>
-                <button class="key" id="six">6</button>
-                <button class="key" id="seven">7</button>
-                <button class="key" id="eight">8</button>
-                <button class="key" id="nine">9</button>
-                <button class="key" id="zero">0</button>
-            </label>
-        </main>
+            </main>
+            
+        </div>
         <div class="retiro">
             <p>Withdraw Here:</p>
             <p id="resultado"></p>
         </div>
-    </div>
-    <script src="java.js"></script>
-</body>
+        <script src="java.js"></script>
+    </body>
 </html>

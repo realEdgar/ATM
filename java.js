@@ -49,8 +49,9 @@ function addValor() {
   setTimeout(()=>{
     x.value = null
   },1000)
-    if(dinero > 1000){
-      alert(`No puedes retirar esa cantidad, el limite es 1000 Dolares`)
+
+    if(dinero > 800){
+      alert(`No puedes retirar esa cantidad, el limite es 800 Dolares`)
     }
     else if(total >= dinero) {
       for(let b of caja) {

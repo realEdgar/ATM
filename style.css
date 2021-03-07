@@ -1,23 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
   }
   html {
-    font-family: Arial, Helvetica, sans-serif;
+    
     font-size: 62.5%;
+  }
+
+  body {
+    background-color: #423cf7;
+    font-family: 'Montserrat', sans-serif;
   }
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 320px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
-    border: 1px solid black;
     padding: 20px;
-    background-color: #134532;
   }
   header {
     display: flex;
@@ -32,16 +36,18 @@
     font-size: 2rem;
     color: white;
   }
+  .user-info {
+    display: flex;
+  }
   .header-total {
     color:white;
     margin: 10px;
     font-size: 1.2rem;
   }
-  .header-total span {
-    background-color: white;    
+  .header-total span {    
     padding: 5px;  
     border-radius: 5px;
-    color: black;
+    color: white;
   }
   main {
     display: flex;
@@ -62,11 +68,9 @@
     font-size: 1.6rem;
   }
   .little-container input {
-    width: 150px;
+    width: 250px;
     height: 40px;
-    outline: none;
     padding: 0 10px;
-    border: none;
     border-radius: 5px;
     text-align: center;
     margin-bottom: 20px;
@@ -78,15 +82,25 @@
   .botones {
     width: 70px;
     height: 40px;
-    font-size: 1rem;
+    font-size: 1.6rem;
     border-radius: 5px;
+    font-family: monospace;
     border: none;
     outline: none;
-    color: white;
     margin: 0 5px;
-    background-color: transparent;
-    box-shadow: 0 3px 3px  rgba(0, 0, 0, 0.5);
+    color:white;
+    box-shadow: 0 3px 3px  rgba(0,0,0,0.5);
   }
+
+  .botones:nth-of-type(1) {
+    background-color: green;
+
+  }
+  .botones:nth-of-type(2) {
+    background-color: red;
+
+  }
+
   .key-buttons {
     width: 180px;
     height: auto;
@@ -101,15 +115,13 @@
     margin: 5px;
     border: none;
     outline: none;
-    color: white;
+    font-family: monospace;
+    color: black;
     font-size: 1.6rem;
     border-radius: 10px;
-    background-color: transparent;
     box-shadow: 0 3px 3px  rgba(0,0,0,0.5);
   }
-  .key:active {
-    transform: scale(0.95);
-  }
+
   .retiro {
     width: 100%;
     height: auto;
