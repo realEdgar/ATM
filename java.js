@@ -74,7 +74,7 @@ function addValor() {
       }
       if(dinero == 0) {           
           for(let entrega of entregado) {
-            resultado.innerHTML += `<img src= "${entrega.imagen.src}" width="100" height="40" style="margin: 5px"/>`;
+            resultado.innerHTML += `<img src=${entrega.imagen.src} width="100" height="40" style="margin: 5px"/>`;
           }
           if(resultado.innerHTML){
             setTimeout(()=>{
