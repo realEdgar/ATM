@@ -83,6 +83,8 @@
     height: 40px;
     padding: 0 10px;
     border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -90,31 +92,13 @@
   .little-container span {
     margin-bottom: 10px;
   }
-
-  .botones {
-    width: 70px;
-    height: 40px;
-    font-size: 1.6rem;
-    border-radius: 5px;
-    font-family: monospace;
-    border: none;
-    outline: none;
-    margin: 0 5px;
-    color:white;
-    box-shadow: 0 3px 3px  rgba(0,0,0,0.5);
-  }
   
-  .botones:active {
-    transform: scale(0.8)
+  #boton:active {
+    transform: scale(0.9)
   }
-  
-  .botones:nth-of-type(1) {
-    background-color: green;
-  }
-  .botones:nth-of-type(2) {
-    background-color: red;
-
-  }
+  #reset:active {
+    transform: scale(0.9)
+  } 
 
   .key-buttons {
     width: 180px;
@@ -124,6 +108,7 @@
     align-items: center;
     justify-content: center;
   }
+
   .key {
     width: 50px;
     height: 50px;
@@ -131,10 +116,52 @@
     border: none;
     outline: none;
     font-family: monospace;
+    font-weight: 700;
     color: black;
     font-size: 1.6rem;
     border-radius: 10px;
     box-shadow: 0 3px 3px  rgba(0,0,0,0.5);
+  }
+
+  .key:nth-of-type(10) {
+    color: white;
+    background-color: green;
+  }
+
+  .key:nth-of-type(12) {
+    color: white;
+    background-color: red;
+  }
+
+  #one:active{
+    transform: scale(0.9);
+  }
+  #two:active{
+    transform: scale(0.9);
+  }
+  #three:active{
+    transform: scale(0.9);
+  }
+  #four:active{
+    transform: scale(0.9);
+  }
+  #five:active{
+    transform: scale(0.9);
+  }
+  #six:active{
+    transform: scale(0.9);
+  }
+  #seven:active{
+    transform: scale(0.9);
+  }
+  #eight:active{
+    transform: scale(0.9);
+  }
+  #nine:active{
+    transform: scale(0.9);
+  }
+  #zero:active{
+    transform: scale(0.9);
   }
 
   .retiro {
