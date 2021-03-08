@@ -8,6 +8,8 @@ class Billete
     this.imagen.src = imagenes[this.valor];
   }
 }
+
+let total;
 function contar() {
   total = 0;
   for(let tot of caja) {
@@ -91,28 +93,33 @@ function addValor() {
   console.log(entregado);
 }
 
+let buttons = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+let button;
+
+for (let i = 0; i <= 9; i++)  {
+  button = document.getElementById(`${buttons[i]}`)
+  button.addEventListener('click', () => x.value += `${i}`)
+}
 
 
-const buttonOne = document.getElementById('one');
-const buttontwo = document.getElementById('two');
-const buttonThree = document.getElementById('three');
-const buttonFour = document.getElementById('four');
-const buttonFive = document.getElementById('five');
-const buttonSix = document.getElementById('six');
-const buttonSeven = document.getElementById('seven');
-const buttonEight = document.getElementById('eight');
-const buttonNine = document.getElementById('nine');
-const buttonZero = document.getElementById('zero');
+// const buttonOne = document.getElementById('one');
+// const buttontwo = document.getElementById('two');
+// const buttonThree = document.getElementById('three');
+// const buttonFour = document.getElementById('four');
+// const buttonFive = document.getElementById('five');
+// const buttonSix = document.getElementById('six');
+// const buttonSeven = document.getElementById('seven');
+// const buttonEight = document.getElementById('eight');
+// const buttonNine = document.getElementById('nine');
+// const buttonZero = document.getElementById('zero');
 
-buttonOne.addEventListener('click', ()=> x.value += '1')
-buttontwo.addEventListener('click', ()=> x.value += '2')
-buttonThree.addEventListener('click', ()=> x.value += '3')
-buttonFour.addEventListener('click', ()=> x.value += '4')
-buttonFive.addEventListener('click', ()=> x.value += '5')
-buttonSix.addEventListener('click', ()=> x.value += '6')
-buttonSeven.addEventListener('click', ()=> x.value += '7')
-buttonEight.addEventListener('click', ()=> x.value += '8')
-buttonNine.addEventListener('click', ()=> x.value += '9')
-buttonZero.addEventListener('click', ()=> x.value += '0')
-
-
+// buttonOne.addEventListener('click', ()=> x.value += '1')
+// buttontwo.addEventListener('click', ()=> x.value += '2')
+// buttonThree.addEventListener('click', ()=> x.value += '3')
+// buttonFour.addEventListener('click', ()=> x.value += '4')
+// buttonFive.addEventListener('click', ()=> x.value += '5')
+// buttonSix.addEventListener('click', ()=> x.value += '6')
+// buttonSeven.addEventListener('click', ()=> x.value += '7')
+// buttonEight.addEventListener('click', ()=> x.value += '8')
+// buttonNine.addEventListener('click', ()=> x.value += '9')
+// buttonZero.addEventListener('click', ()=> x.value += '0')
