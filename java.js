@@ -51,7 +51,7 @@ function addValor() {
   },1000)
 
     if(dinero > 800){
-      alert(`No puedes retirar esa cantidad, el limite es 800 Dolares`)
+      alert(`Invalid Operation, The limit is 800 Dollars`)
     }
     else if(total >= dinero) {
       for(let b of caja) {
@@ -83,10 +83,10 @@ function addValor() {
           }
           contar()
       } else {
-        alert('No tengo los billetes necesarios')
+        alert('Doesn´t have necessary money')
       }
     } else{
-      alert('No hay dinero suficiente');
+      alert('Doesn´t have enough money');
   }
   console.log(entregado);
 }
